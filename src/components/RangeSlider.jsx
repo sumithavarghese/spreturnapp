@@ -20,7 +20,7 @@ class RangeSlider extends Component {
     }
 
     componentDidMount() {
-        const myData = [].concat(data)
+        const myData = data
             .sort((a, b) => a.year - b.year);
         let cumulativeReturns = myData.map(item => {
             const container = {};
